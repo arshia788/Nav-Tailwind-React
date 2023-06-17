@@ -12,8 +12,15 @@ const Nav = () => {
 
             <h2 className='text-3xl font-bold '>logo</h2>
 
-            <div>
-                <ul className='flex gap-x-3 text-md'>
+            <div
+            className={`
+                transition-all duration-150
+                sm:static sm:bg-transparent sm:right-0 sm:top-0 sm:w-fit sm:p-0
+                xs:absolute ${show ? 'xs:left-0':'xs:-left-full'} xs:top-12 xs:bg-blue-800 xs:w-full xs:p-1
+                `
+            }
+            >
+                <ul className={'flex gap-x-3 text-md'} >
                     <li>home</li>
                     <li>shop</li>
                     <li>log-out</li>
